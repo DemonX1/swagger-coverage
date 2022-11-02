@@ -33,8 +33,7 @@ public class NotEmptyParameterRule extends ParameterConditionRule {
         }
         if (this.options.getFilter() != null
                 && !this.options.getFilter().isEmpty()
-                && !this.options.getFilter().contains(parameter.getIn())
-        ) {
+                && !this.options.getFilter().contains(parameter.getIn())) {
             return true;
         }
 
